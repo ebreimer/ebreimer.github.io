@@ -32,279 +32,39 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li><a href="#sec1">About</a></li>
-        <li><a href="#sec2">Exercises</a></li>
-        <li><a href="#sec3">Philosophy</a></li>
+      	{% include menu.html %}	
       </ul>
     </div>
    </div>
 </div>
 
-<!-- Header -->
+<!-- Title content - transparent header -->
 <div class="header alt vert">
   <div class="container header-transparent">
-    <h1><span class="brand-color">P<sup>3</sup></span> Particle Physics Playground</h1>
-    <p class="lead">Repo of particle physics data from CMS and other experiments with code and tutorials on how to interact with these data.</p>
-      
-    <div class="row">
-    	<div class="col-md-4 col-md-offset-2">
-    		<p>
-    		<a href="https://github.com/mattbellis/Particle-Physics-Playground" class="btn btn-primary ">View on GitHub</a>
-    		</p>
-    	</div>
-    	<div class="col-md-4">
-  	  	<p>
-  	  	<span class="caps">Download</span>
-      	<a href="https://github.com/mattbellis/Particle-Physics-Playground/zipball/master" class="btn btn-info ">Zip</a>
-				<a href="https://github.com/mattbellis/Particle-Physics-Playground/tarball/master" class="btn btn-default btn-info">Tar</a>
-  	  	</p>
-    	</div>
-    </div>
+		{% include title.html %}	
   </div>
 </div>
 
 <hr>
 
-<!-- Call blurb -->
-<div id="sec1" class="blurb">
-  <div class="container">
-    <h1>About <span class="brand-color">P<sup>3</sup></span> <small>Particle Physics Playground</small></h1>
-    <div class="row">
-    	<!-- Column -->
-      <div class="col-md-7">
-        {% include overview.html %}	
-      </div> <!-- End column -->
-      <!-- Column -->
-      <div class="col-md-5">  
-				<h3><i class="fa fa-link"></i> Links</h3>
-					<ul class="nav nav-pills nav-stacked">
-					<li><a href="https://github.com/mattbellis/Particle-Physics-Playground" class="list-group-item list-group-item-info">
-					<span class="brand-color">P<sup>3</sup></span> GitHub Repository</a></li>
-					<li><a href="#sec2" class="list-group-item list-group-item-info">
-					<span class="brand-color">P<sup>3</sup></span> Exercises</a></li>
-					<li><a href="https://www.python.org/" class="list-group-item list-group-item-primary">
-					Python Programming Language</a></li>
-					<li><a href="http://ipython.org/notebook.html" class="list-group-item list-group-item-primary">
-					iPython Notebooks</a></li>
-				</ul>
-				<hr>
-				<p>
-		    <img src="img/bg1.jpg" alt="Compact Muon Solenoid" class="img-responsive img-rounded">
-				</p>
-				<h5>CMS (Compact Muon Solenoid) at CERN</h5>
-      </div> <!-- End column -->
-    </div> <!-- End row -->
-  </div>
-</div>
+<!-- Section 1  -->
+{% include about.html %}	
 
 <hr>
 
-<!-- Location featurette -->
-<div class="featurette" id="sec2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Exercises</h1>
-        <h2>Particle Physics</h2>
-				<hr class="space">
-				<p><a href="#sec3" class="btn btn-danger btn-lg">Philosophy</a></p>
-				<hr class="space">
-      </div>  
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="featurette-item">
-          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/discovering_particles_1.ipynb"><i class="fa fa-cog"></i></a>
-          <h4>Exercise 1</h4>
-          <p>Discovering Particles</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="featurette-item">
-          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/learning_about_particles_1.ipynb"><i class="fa fa-cog"></i></a>
-          <h4>Exercise 2</h4>
-          <p>Learning about particles and their properties</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="featurette-item">
-          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/discovering_more_particles_1.ipynb"><i class="fa fa-cog"></i></a>
-          <h4>Exercise 3</h4>
-          <p>Discovering More Particles</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 text-center">
-        <div class="featurette-item">
-          <a href="#"><i class="fa fa-cog"></i></a>
-          <h4>More Exercises</h4>
-          <p>Coming soon...</p>
-        </div>
-      </div>
-    </div> <!-- End row -->
-  </div>
-</div>
+<!-- Section 2  -->
+{% include exercises.html %}	
 
-<!-- philosophy callout -->
-<div class="philosophy" id="sec3">
-  <div class="container">
-		<div class="col-md-8 col-md-offset-2">  
-			<div class="panel panel-philosophy">
-			  <div class="panel-heading text-center">
-			    <h2>Philosophy</h2>
-			    
+<hr>
 
-								    
+<!-- Section 3  -->
+{% include philosophy.html %}	
 
-			  </div>
-			  <div class="panel-body">
-			  	<ul class="spaced text-dark">
-		        <li> <b>Identify your learning objectives.</b> Every exercise should identify 
-		        the learning goals at the top. This allows the user/student to know what they 
-		        will be getting out of the exercise and whether or not it will be useful to them.
-		        It has the additional benefit of forcing the author to consider how they will structure
-		        the exercise and what they want the user to come away with.
-		        <li> <b>Provide REAL data.</b> While it is often useful to use Monte Carlo to emphasize
-		        certain aspects of the data analysis with a more controlled dataset, I feel it is
-		        important to encourage experiments to provide their data to the public. If an
-		        experiment wants this site to host some of their data and exercises, I would require
-		        at least some of the data actually come from their experiment. 
-					</ul>
-			  
-			  
-						<p>This project is licensed using the MIT Open Source license. This means
-						that any of you anywhere can make a copy of this site and host it elsewhere. 
-						I am totally cool with that.
-						</p>
-				    <p>
-				    However, it would be great to have some common repository for different experiments to 
-				    have their data used to teach people science and train the next generation of particle
-				    physicists. I am therefore happy to include data and exercises (at any level!) from 
-				    interested individuals. To this end, I have some helpful suggestions (and requirements!)
-				    for those of you who would like to contribute.
-						</p>
-			  </div>
-			</div>
-		</div>
-  </div>
-</div>
+<hr>
 
-<!--
-<div class="blurb bright" id="sec4">
-  <div class="container">
-	<h1>Conference Team</h1>
-	<hr>
-	
-	
-  </div>
-</div>
--->
+<!-- Footer  -->
+{% include footer.html %}	
 
-
-
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <hr>
-        <p><span class="brand-color">P<sup>3</sup></span> Particle Physics Playground &copy;2015</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<ul class="nav pull-right scroll-down">
-  <li><a href="#" title="Scroll down"><i class="fa fa-chevron-down fa-3x"></i></a></li>
-</ul>
-<ul class="nav pull-right scroll-top">
-  <li><a href="#" title="Scroll to top"><i class="fa fa-chevron-up fa-3x"></i></a></li>
-</ul>
-
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
-</html>i>7 miles from <a class="btn btn-default btn-xs btn-basic" href="http://www.flyilm.com/">Wilmington International Airport (ILM)</a></li>
-						 <li>Free shuttle to/from Airport</li>
-					</ul>
-			  </div>
-			</div>
-		</div>
-  </div>
-</div>
-
-<!--
-<div class="blurb bright" id="sec4">
-  <div class="container">
-	<h1>Conference Team</h1>
-	<hr>
-	
-	
-  </div>
-</div>
--->
-
-
-<div class="blurb" id="sec5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <h2>Sponsors / Exhibitors Information</h2>		
-				<div class="alert alert-success text-center">
-					<p class="lead">Want to Reach Top IS/IT Educators, Researchers and Institutions?</p>
-					<p><a class="btn btn-success" href="docs/sponsors.pdf">More Info & Sponsor Form</a></p>
-				</div>
-        <p class="lead">
-        	Two conferences to reach IS and CIS educators and researchers!
-				</p>
-			  <div class="row">
-			    <div class="col-sm-5 col-sm-offset-1 text-center">
-			      <div class="featurette-item">
-			        <i class="fa fa-graduation-cap"></i>
-			        <h3>EDSIGCON</h3>
-			        <p>Serving Academic Professionals and Institutions of Higher Learning</p>
-			      </div>
-			    </div>
-			    <div class="col-sm-5 text-center">
-			      <div class="featurette-item">
-			        <i class="fa fa-university"></i>
-			        <h3>CONISAR</h3>
-			        <p>Serving Academic Professionals, Practitioners and the IT Industry</p>
-			      </div>
-			    </div>
-			  </div>   				
-				<p>
-					Your organization should not miss this opportunity to be a part of two conferences 
-					(EDSIGCON and CONISAR 2015) that focus on academic professionals interested in 
-					IS/CS/CIS education and IS applied research. EDSIG is the Educators Special Interest Group 
-					for the Association of Information Technology Professionals. 
-					Both events will be held Nov 1-4, 2015 in Wilmington, North Carolina.
-				</p>
-				<p>
-					More information: Contact the conference chair <b>Leslie Waguespack</b> 
-					at <samp>lwaguespack@bentley.edu</samp> or the conference coordinator
-					<b>Tom Janicki</b> at <samp>janickit@uncw.edu</samp>.
-				</p> 
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <ul class="list-inline">
-          <li><a href="https://www.facebook.com/groups/2216591169/"><i class="fa fa-facebook fa-2x"></i></a></li>
-        </ul>
-        <hr>
-        <p>CONISAR &copy;2015</p>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <ul class="nav pull-right scroll-down">
   <li><a href="#" title="Scroll down"><i class="fa fa-chevron-down fa-3x"></i></a></li>
