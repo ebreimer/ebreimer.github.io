@@ -5,17 +5,15 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>CONISAR Conference on Information Systems Applied Research</title>
+		<title>Particle-Physics-Playground by mattbellis</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="keywords" content="Conference, EDSIG, CONISAR, Applied Research, Computer Science, Computer Information Systems, Information Systems, Information Techology">
+		<meta name="keywords" content="Particle Physics, iPython examples">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
-		<!-- Favicon for this template -->
-		<link rel="icon" href="/ico/favicon.png"> 
 	</head>
 	<body>
 
@@ -23,7 +21,7 @@
 <div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
   <div class="container">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> CONISAR</a>
+      <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> P<sup>3</sup></a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -32,13 +30,9 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li><a href="#sec1">Call</a></li>
-        <li><a href="#sec2">Location</a></li>
-        <li><a href="#sec3">Hotel</a></li>
-        <li><a href="#sec5">Sponsors</a></li>
-        <li class="nav-divider"></li>
-        <li><a href="http://www.edsig.org">EDSIG</a></li>
-        <li><a href="http://www.aitp.org">AITP</a></li>        
+        <li><a href="#sec1">About</a></li>
+        <li><a href="#sec2">Exercises</a></li>
+        <li><a href="#sec3">Philosophy</a></li>
       </ul>
     </div>
    </div>
@@ -46,21 +40,24 @@
 
 <!-- Header -->
 <div class="header alt vert">
-  <div class="container">
-    <h1>CONISAR 2015</h1>
-      <p class="lead">Conference on Information Systems Applied Research</p>
-      <p>
-      	<a href="#sec1" class="btn btn-primary ">November 1-4, 2015</a>
-				<a href="#sec3" class="btn btn-info ">Hilton Riverside</a>
-      </p>
-      <p> 
-      	<a href="#sec2" class="btn btn-default btn-transparent btn-lg">Wilmington, NC</a>
-      </p>
-      <p style="padding-top: 30px"> 
-      	<a href="#sec1" class="btn btn-warning btn-lg">Call for Participation &amp;<br>Submission Info</a>
-      </p>      
+  <div class="container header-transparent">
+    <h1><span class="brand-color">P<sup>3</sup></span> Particle Physics Playground</h1>
+    <p class="lead">Repo of particle physics data from CMS and other experiments with code and tutorials on how to interact with these data.</p>
       
-      
+    <div class="row">
+    	<div class="col-md-4 col-md-offset-2">
+    		<p>
+    		<a href="https://github.com/mattbellis/Particle-Physics-Playground" class="btn btn-primary ">View on GitHub</a>
+    		</p>
+    	</div>
+    	<div class="col-md-4">
+  	  	<p>
+  	  	<span class="caps">Download</span>
+      	<a href="https://github.com/mattbellis/Particle-Physics-Playground/zipball/master" class="btn btn-info ">Zip</a>
+				<a href="https://github.com/mattbellis/Particle-Physics-Playground/tarball/master" class="btn btn-default btn-info">Tar</a>
+  	  	</p>
+    	</div>
+    </div>
   </div>
 </div>
 
@@ -69,74 +66,71 @@
 <!-- Call blurb -->
 <div id="sec1" class="blurb">
   <div class="container">
-    <h1>CONISAR 2015</h1>
+    <h1>About <span class="brand-color">P<sup>3</sup></span> <small>Particle Physics Playground</small></h1>
     <div class="row">
     	<!-- Column -->
       <div class="col-md-7">
-        <h2><i class="fa fa-user fa"></i> Call for Participation</h2>
-        <p class="lead">
-        	You are invited you to submit Papers, Cases, Panels and Abstracts to the Conference on Information Systems Applied Research (CONISAR) 
-        	on November 1-4, 2015 in <a href="#sec2">Wilmington, North Carolina</a>.
-        </p>
-        <p>
-        	CONISAR focuses on research in real-world practical applications of information systems, sciences and technology. Leading papers submitted to CONISAR are also considered for review and publication in <a href="http://www.jisar.org">JISAR</a> (Journal of Information Systems Applied Research).
-        </p>
+        <h2><i class="fa fa-sitemap"></i> Overview</h2>
+				
+				<p class="lead">This site provides exercises, mostly using real data from experiments, that teach particle physics, mostly from the 
+				experimental side. 
+				
+				<p>This site is <i>not</i> meant to be a fully comprehensive tutorial. The ideal student will have learned the basic 
+				concepts elsewhere (classroom setting, mentor, independent study) and then will use these exercises to test their understanding of 
+				the concepts and to develop some sense of how "real scientists" are doing this work in the field.
+				</p>
+				<p>
+				These exercises are built around <a href="https://www.python.org/">the Python programming language</a>, specifically 
+				the <a href="http://ipython.org/notebook.html">the iPython notebook</a>. Anyone who uses these exercises should familiarize 
+				themselves with both of these products.
+				</p>
+				<p>
+				A standard work flow would be to clone the <a href="https://github.com/mattbellis/Particle-Physics-Playground">Github repository</a> 
+				and then run the notebooks, editing them as they go along. By actually performing the calculations themselves, the user will get the
+				most out of this project.
+				<p>
+				<p>
+				And most importantly, have fun with it!
+				</p>
+				
+				<h2><i class="fa fa-group"></i> Contributors</h2>
+				
 
- 				<h2 id="submit"><i class="fa fa-info-circle"></i> Submission Info</h2>
- 				     
- 				<h3>Deadlines</h3>
-				<!-- <p><span class="label label-warning">DATES ARE FIRM</span></p> -->
-				<ul class="spaced">				
-					<li><strong>On or before June 15:</strong> for paper award consideration.</li>
-					<li><strong>On or before July 15:</strong> for <a href="http://www.jisar.org">JISAR</a> consideration.</li>
-					<li><strong>On or before August 15:</strong> for CONISAR Proceedings inclusion.</li>
-				</ul>  
-        
-        
-				<h3>Guidelines</h3>
+				<p>
+		    <a href="https://www.siena.edu/academics/schools-departments/departments/physics-and-astronomy" class="btn btn-default btn-lg">
+		    <img src="img/siena.png" alt="Siena College" class="img-responsive img-rounded"><br>
+		    Physics Department<br>Siena College</a>
+		    </p>
+		    
+		    
 
-				<p><a class="btn btn-success" href="docs/papers.pdf">Paper Guidelines</a></p>
-				<p><a class="btn btn-primary"  href="docs/template.dotx">Submission Template</a></p>
-				<p class="text-warning"><span class="label label-warning">IMPORTANT</span> 
-				Using the submission template is required. Authors who carefully follow the paper format guidelines will avoid delays in the review process</p>
-				<p class="text-info">The submission system will be open in April.</p>
-									<!--
-					<li><a href="docs/abstracts.pdf">Abstract &amp; Works in Progress Guidelines</a></li>
-					<li><a href="docs/cases.pdf">Teaching Case Guidelines</a></li>
-					-->
-					
+		    <p>
+		    <a href="http://cms.web.cern.ch/" class="btn btn-default btn-lg">
+		    <img src="img/cms.png" alt="Compact Muon Solenoid" class="img-responsive img-rounded"><br>
+		    CMS Experiment<br>
+		    CERN</a>
+		    </p>
+
+									
       </div> <!-- End column -->
       <!-- Column -->
-      <div class="col-md-5">
-
-	      <div class="alert alert-success">
-					<p class="lead">Learn more about past conferences</p>
-					<p>
-						<a class="btn btn-success" href="http://proc.conisar.org">CONISAR Proceedings</a>
-						<a class="btn btn-success" href="http://www.conisar.org/2014">CONISAR 2014</a
-					</p>
-				</div>   
-
-	      <div class="alert alert-info">
-					<p>This year CONISAR is held in conjunction with the EDSIG Conference on Information Systems and Computing Education.</p>
-					<p><a class="btn btn-info" href="http://www.edsigcon.org">EDSIGCON</a></p>
-				</div>      
-      
-      
-				<h3><i class="fa fa-book"></i> Topics</h3> 
-				<p>Papers are invited in any and all topics relating to CS, IS and IT curricula and pedagogy including:</p>				
-				<ul class="spaced">
-					<li>Applied IS Research & Methodologies</li>
-					<li>Business Intelligence / Big Data</li>
-					<li>Cloud Computing</li>
-					<li>Database Management & Warehousing</li>
-					<li>Digital and Multimedia Technologies</li>
-					<li>ERP/Business Processes/Supply Chain</li>
-					<li>IT Management and Strategy</li></li>
-					<li>Security/Networks/Telecommunications</li>
-					<li>Systems Development / Software Eng.</li>
-					<li>Web Applications / Web 2.0</li>
+      <div class="col-md-5">  
+				<h3><i class="fa fa-link"></i> Links</h3>
+					<ul class="nav nav-pills nav-stacked">
+					<li><a href="https://github.com/mattbellis/Particle-Physics-Playground" class="list-group-item list-group-item-info">
+					<span class="brand-color">P<sup>3</sup></span> GitHub Repository</a></li>
+					<li><a href="#sec2" class="list-group-item list-group-item-info">
+					<span class="brand-color">P<sup>3</sup></span> Exercises</a></li>
+					<li><a href="https://www.python.org/" class="list-group-item list-group-item-primary">
+					Python Programming Language</a></li>
+					<li><a href="http://ipython.org/notebook.html" class="list-group-item list-group-item-primary">
+					iPython Notebooks</a></li>
 				</ul>
+				<hr>
+				<p>
+		    <img src="img/bg1.jpg" alt="Compact Muon Solenoid" class="img-responsive img-rounded">
+				</p>
+				<h5>CMS (Compact Muon Solenoid) at CERN</h5>
       </div> <!-- End column -->
     </div> <!-- End row -->
   </div>
@@ -149,84 +143,128 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Wilmington</h1>
-        <h2>North Carolina</h2>
+        <h1>Exercises</h1>
+        <h2>Particle Physics</h2>
 				<hr class="space">
-				<p><a href="#sec3" class="btn btn-info btn-lg">Hilton Riverside</a></p>
+				<p><a href="#sec3" class="btn btn-danger btn-lg">Philosophy</a></p>
 				<hr class="space">
       </div>  
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-6 text-center">
         <div class="featurette-item">
-          <a href="http://www.usatoday.com/story/travel/destinations/2014/10/24/best-american-riverfront-10best-readers-choice-winners/17850025/"><i class="fa fa-camera"></i></a>
-          <h4>Riverfront</h4>
-          <p>Voted #1 riverfront by USA Today readers.</p>
+          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/discovering_particles_1.ipynb"><i class="fa fa-cog"></i></a>
+          <h4>Exercise 1</h4>
+          <p>Discovering Particles</p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <div class="featurette-item">
-          <a href="http://www.wilmingtondowntown.com/explore/dining"><i class="fa fa-coffee"></i></a>
-          <h4>Dining</h4>
-          <p>Over 40 locally owned restaurants downtown</p>
+          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/learning_about_particles_1.ipynb"><i class="fa fa-cog"></i></a>
+          <h4>Exercise 2</h4>
+          <p>Learning about particles and their properties</p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <div class="featurette-item">
-          <a href="http://www.battleshipnc.com/"><i class="fa fa-anchor"></i></a>
-          <h4>Battleship</h4>
-          <p>Visit historic USS North Carolina via water taxi.</p>
+          <a href="http://nbviewer.ipython.org/github/mattbellis/Particle-Physics-Playground/blob/gh-pages/discovering_more_particles_1.ipynb"><i class="fa fa-cog"></i></a>
+          <h4>Exercise 3</h4>
+          <p>Discovering More Particles</p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <div class="featurette-item">
-          <a href="http://www.wilmingtonandbeaches.com/"><i class="fa fa-sun-o"></i></a>
-          <h4>Beaches</h4>
-          <p>Three island beaches are minutes away.</p>
+          <a href="#"><i class="fa fa-cog"></i></a>
+          <h4>More Exercises</h4>
+          <p>Coming soon...</p>
         </div>
       </div>
     </div> <!-- End row -->
-    <div class="row">
-      <div class="col-md-12">
-				<hr class="space">
-				<div class="map-frame-rounded"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3298.3828997569076!2d-77.9507309!3d34.238772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa1fc0ad46fb7d%3A0x8a082dbd3c4e4a58!2s301+N+Water+St%2C+Wilmington%2C+NC+28401!5e0!3m2!1sen!2sus!4v1421336691811" class="map-frame"></iframe></div>
-      </div>
-    </div>
   </div>
 </div>
 
-<!-- Hotel callout -->
-<div class="hotel" id="sec3">
+<!-- philosophy callout -->
+<div class="philosophy" id="sec3">
   <div class="container">
 		<div class="col-md-8 col-md-offset-2">  
-			<div class="panel panel-hotel">
+			<div class="panel panel-philosophy">
 			  <div class="panel-heading text-center">
-			    <h2>Hilton Wilmington Riverside</h2>
-			    <p>
-			    301 North Water Street<br>
-			    Wilmington, North Carolina 28401-3934<br>
-			    910-763-5900
-			    </p>
-			    <p><a class="btn btn-sm btn-primary" href="http://www.wilmingtonhilton.com">www.wilmingtonhilton.com</a></p>
-			    <p>
-				    <a href="http://www.wilmingtonhilton.com" class="btn btn-default btn-lg">$133 PER NIGHT</a>
-					</p>
+			    <h2>Philosophy</h2>
+			    
+
+								    
+
 			  </div>
 			  <div class="panel-body">
 			  	<ul class="spaced text-dark">
-			  		<li>Located in the heart of <a class="btn btn-default btn-xs btn-basic" href="http://www.wilmingtondowntown.com/">Historic Downtown Wilmington</a></li>
-			  		<li>Across from <a class="btn btn-default btn-xs btn-basic" href="http://www.shopcottonexchange.com/cotton-exchange-history/">Wilmington's famous Cotton Exchange</a></li>  
-						<li>Overlooking the <a class="btn btn-default btn-xs btn-basic" href="http://en.wikipedia.org/wiki/Cape_Fear_River">Cape Fear River</a></li>
-						<li>Footsteps from the <a class="btn btn-default btn-xs btn-basic" href="http://www.wilmingtondowntown.com/go/riverwalk">Wilmington Riverwalk</a></li>
-						<li>Walk to great 
-						<a class="btn btn-default btn-xs btn-basic" href="http://www.wilmingtondowntown.com/explore/shopping">shopping</a>, 
-						<a class="btn btn-default btn-xs btn-basic" href="http://www.wilmingtondowntown.com/explore/dining">dining</a>
-						 and 
-						<a class="btn btn-default btn-xs btn-basic" href="http://www.wilmingtondowntown.com/explore/attractions">sightseeing</a></li>
-						 <li>Take a water taxi to the <a class="btn btn-default btn-xs btn-basic" href="http://www.battleshipnc.com/">USS North Carolina Battleship</a></li>
-						 <li>Walk to the <a class="btn btn-default btn-xs btn-basic" href="http://www.bellamymansion.org/"> Bellamy Mansion Museum</a>, North Carolina's most 
-						 spectacular examples of antebellum architecture</li>
-						 <li>7 miles from <a class="btn btn-default btn-xs btn-basic" href="http://www.flyilm.com/">Wilmington International Airport (ILM)</a></li>
+		        <li> <b>Identify your learning objectives.</b> Every exercise should identify 
+		        the learning goals at the top. This allows the user/student to know what they 
+		        will be getting out of the exercise and whether or not it will be useful to them.
+		        It has the additional benefit of forcing the author to consider how they will structure
+		        the exercise and what they want the user to come away with.
+		        <li> <b>Provide REAL data.</b> While it is often useful to use Monte Carlo to emphasize
+		        certain aspects of the data analysis with a more controlled dataset, I feel it is
+		        important to encourage experiments to provide their data to the public. If an
+		        experiment wants this site to host some of their data and exercises, I would require
+		        at least some of the data actually come from their experiment. 
+					</ul>
+			  
+			  
+						<p>This project is licensed using the MIT Open Source license. This means
+						that any of you anywhere can make a copy of this site and host it elsewhere. 
+						I am totally cool with that.
+						</p>
+				    <p>
+				    However, it would be great to have some common repository for different experiments to 
+				    have their data used to teach people science and train the next generation of particle
+				    physicists. I am therefore happy to include data and exercises (at any level!) from 
+				    interested individuals. To this end, I have some helpful suggestions (and requirements!)
+				    for those of you who would like to contribute.
+						</p>
+			  </div>
+			</div>
+		</div>
+  </div>
+</div>
+
+<!--
+<div class="blurb bright" id="sec4">
+  <div class="container">
+	<h1>Conference Team</h1>
+	<hr>
+	
+	
+  </div>
+</div>
+-->
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <hr>
+        <p><span class="brand-color">P<sup>3</sup></span> Particle Physics Playground &copy;2015</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<ul class="nav pull-right scroll-down">
+  <li><a href="#" title="Scroll down"><i class="fa fa-chevron-down fa-3x"></i></a></li>
+</ul>
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="fa fa-chevron-up fa-3x"></i></a></li>
+</ul>
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>i>7 miles from <a class="btn btn-default btn-xs btn-basic" href="http://www.flyilm.com/">Wilmington International Airport (ILM)</a></li>
 						 <li>Free shuttle to/from Airport</li>
 					</ul>
 			  </div>

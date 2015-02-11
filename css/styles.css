@@ -2,11 +2,11 @@
 
 Colors used
 
-Dark Blue #3B3A35  
-Medium Blue #20457C 
-Light Blue #ECDFBD 
-Yellow Highlight #FB6648 
-Deep Orange #5E3448 
+Gray #3B3A35  
+Blue #20457C 
+White #ECDFBD 
+Orange #FB6648 
+Purple #5E3448 
 
 */
 
@@ -21,6 +21,7 @@ body, html {
   height: 100%;
   width: 100%;
   font-family:'Open Sans',Arial,sans-serif;
+  font-size: 16px;
 }
 
 footer {
@@ -70,10 +71,39 @@ img.grayscale {
   letter-spacing:2px;
 }
 
+.btn-primary, a.list-group-item-primary {
+	background-color: #20457C;
+	border-color: #10356C;
+	color: #fff;
+}
+.btn-primary:hover {
+	border-color: #10356C;
+	background-color: #10356C;
+}
+.btn-info, a.list-group-item-info {
+	background-color: #5E3448;
+	border-color: #4E2438;
+	color: #fff;	
+}
+.btn-info:hover {
+	background-color: #4E2438;
+	border-color: #4E2438;
+}
 .lead {
   font-family:'Quicksand',Arial,sans-serif;
   letter-spacing:2px;
 }
+.btn-danger, a.list-group-item-danger {
+	background-color: #FB6648;
+	border-color: #EB5638;
+	color: #fff;	
+}
+.btn-danger:hover {
+	background-color: #EB5638;
+	border-color: #EB5638;
+}
+
+
 
 .navbar a {
   color:#fff;
@@ -83,8 +113,9 @@ img.grayscale {
   letter-spacing:2px;  
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand, .brand-color {
 	color: #FB6648;
+	font-family:'Quicksand',Arial,sans-serif;
 }
 
 .navbar-bold.affix {
@@ -97,7 +128,8 @@ img.grayscale {
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color:#FB6648;
+  background-color:#ECDFBD;
+  color: #3B3A35;
 }
 
 /* fix bs3 horizontal scrollbar bug */
@@ -118,8 +150,9 @@ img.grayscale {
   background-color:#3B3A35;
 }
 
-.alt li a:hover, .alt li.active {
-  background-color:#20457C;
+.alt li a:hover, .alt li.active, .alt li.active a {
+  background-color:#ECDFBD;
+  color: #3B3A35;
 }
 
 .blurb {
@@ -168,8 +201,15 @@ img.grayscale {
   margin: 10px;
 }
 
+.caps {
+  text-transform:uppercase;
+  font-family:'Quicksand',Arial,sans-serif;
+  letter-spacing:2px;
+}
+
+
 .featurette {
-  background: #222334;
+  background: #5E3448;
   padding: 50px 0 80px;
   color: #ffffff;
 }
@@ -205,19 +245,25 @@ img.grayscale {
 
 .header h1 {
 	margin-top: 40px;
-  font-size: 64px;
+  font-size: 50px;
   color:#fff;
   text-transform: none;
 }
 
 .header .lead {
-  color: #FB6648;
+  color: #ECDFBD;
   font-size:22px;
 }
 
+.header .brand {
+	  color: #FB6648;
+  font-size:60px;
+}
+
 .header, .header.alt {
+	color: #FFF;
   height: 700px;
-  background: #20457C url('../img/wilmington2.jpg') no-repeat top center fixed;
+  background: #5E3448 url('../img/bg2.jpg') no-repeat top center fixed;
 }
 
 .header .btn-default.btn-lg:hover {
@@ -225,9 +271,17 @@ img.grayscale {
    color:#777777;
 }
 
-.hotel {
+.header-transparent {
+	 border-color: transparent;
+   background-color: rgba(40,40,40,0.6); 
+   border-radius: 10px;
+   padding-bottom: 20px;
+   margin-top: 40px;
+}
+
+.philosophy {
 	padding: 50px 0px 150px;
-  background: url('../img/hilton1.jpg') no-repeat center 50px fixed;
+  background: url('../img/bg1.jpg') no-repeat center 50px fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -277,17 +331,22 @@ img.grayscale {
 	}
 }
 
-.panel-hotel {
-	background-color: rgba(255,255,255,0.75);
+.panel-philosophy {
+	background-color: rgba(40,40,40,0.75);
 	border: 0px;
 	border-radius: 10px;
 }
 
-.panel-hotel .panel-heading {
-	background-color: #222334;
+.panel-philosophy .panel-heading {
+	background-color: #EB5638;
 	color: #fff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.panel-philosophy .panel-body {
+	color: #fff;
+	padding: 30px;
 }
 
 .scroll-down li a, .scroll-top li a {
@@ -323,6 +382,7 @@ img.grayscale {
 	font-size: 15px;
 	margin-top: 5px;
 }
+
 .vert {
   vertical-align: middle;
   width:100%;
