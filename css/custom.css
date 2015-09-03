@@ -265,9 +265,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
-    background-position: center center;
-    background-repeat: none;
+    background: #222 url(../img/header-bg.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -285,15 +283,18 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    font-weight: normal;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;  
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    font-weight: normal;
 }
 
 @media(min-width:768px) {
@@ -313,7 +314,8 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+				color: #fed136;        
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -441,7 +443,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #cccccc;
 }
 
 .timeline>li {
@@ -489,17 +491,17 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #cccccc;
     border-radius: 100%;
     text-align: center;
-    color: #fff;
+    color: #000;
     background-color: #fed136;
 }
 
 .timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
-    line-height: 14px;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -565,9 +567,9 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 16px;
-        font-size: 13px;
-        line-height: 18px;
+        margin-top: 33px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -593,8 +595,8 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 30px;
-        font-size: 18px;
+        margin-top: 55px;
+        font-size: 20px;
         line-height: 26px;
     }
 
@@ -619,7 +621,9 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+        margin-top: 65px;
+        font-size: 24px;
+        line-height: 26px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -652,14 +656,16 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #888;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: #ccc;
+    padding: 20px 0px;
 }
 
 section#contact .form-group {
@@ -742,8 +748,9 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
     border-radius: 100%;
     font-size: 20px;
     line-height: 40px;
