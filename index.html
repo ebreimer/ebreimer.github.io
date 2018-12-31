@@ -1,670 +1,1113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+	 <!-- - - - - - - - - - - head - - - - - - - - - - -->
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Agency - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Eric Breimer</title>
+		<link rel="icon" href="img/favicon.png?v=1.1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" >
+		<link rel="stylesheet" href="css/open-iconic-bootstrap.css">
+  </head>
+	<!-- - - - - - - - - - - body - - - - - - - - - - -->
+  <body data-spy="scroll" data-target="#main-navbar">
+		<!-- - - - - - - - - - - nav - - - - - - - - - - -->
+		<nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+		  <a class="navbar-brand" href="index.html">
+      	<img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="EB">
+        &nbsp; <h1 class="navbar-title">Eric Breimer</h1>
+      </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbar-menu">
+		    <ul class="navbar-nav mr-auto" role="tablist">
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-danger" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-warning" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-success" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-info" href="#vita">Vita</a></li>
+					<li class="nav-item"><a class="nav-link btn btn-sm btn-primary" href="#research">Research</a></li>          
+		    </ul>
+		    <div class="navbar-text float-right">
+      		<span class="oi oi-clock"></span> <span id="time-day"></span>
+      	</div> 
+		  </div>  
+    </nav> <!-- /navbar -->
+		<!-- - - - - - - - - - - carousel - - - - - - - - - - -->
+		<div id="main-carousel" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#main-carousel" data-slide-to="1"></li>
+		    <li data-target="#main-carousel" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+		    <div class="carousel-item active item1">
+		      <div class="container">
+			      <div class="carousel-caption">
+              <h2>Current Courses</h2>
+              <a class="btn btn-lg btn-warning" href="courses/csis-390-s19/" role="button">CSIS-390</a>
             </div>
+          </div>
+		    </div>
+		    <div class="carousel-item item2">
+		      <div class="container">
+            <div class="carousel-caption">
+              <h2>Office Hours</h2>
+              <a class="btn btn-lg btn-success" href="#schedule" role="button">See Schedule</a>
+            </div>
+          </div>
+		    </div>
+		    <div class="carousel-item item3">
+		      <div class="container">
+            <div class="carousel-caption">
+              <h2>Recent Work</h2>
+              <a class="btn btn-lg btn-info" href="#research" role="button">See Research</a>
+            </div>
+          </div>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div> <!-- /carousel -->
+		<!-- - - - - - - - - - - main container - - - - - - - - - - -->
+		<div class="container">
+			
+			<!-- - - - - - - - - - - contact section - - - - - - - - - - -->
+			<h2 id="contact" class="main-section"><span class="oi oi-person"></span> Contact</h2>
+			<div class="row">
+		    <div class="col-xl-4 col-lg-4 col-md-12">
+				  <div class="row">
+						<div class="col-xl-12 col-lg-9 col-md-8 col-sm-7 col-12">
+					    <h3 class="contact-name">Dr. Eric Breimer</h3>
+					    <h4 class="contact-title">Associate Professor</h4>
+					    <p>	Computer Science Department<br>
+					    		Siena College<br>
+					    		515 Loudon Road<br>
+					    		Loudonville, NY 12211<br>
+					    		<br>
+					    		<span class="oi oi-home"></span> 							RB320<br>
+					    		<span class="oi oi-phone"></span> 						(518) 786-5084<br>
+					    		<span class="oi oi-envelope-closed"></span> 	ebreimer@siena.edu
+					    </p>
+						  <img src="img/ebreimer2.jpg" class="img-thumbnail d-block d-sm-none img-fluid" alt="Eric Breimer">  
+						</div>		
+						<div class="col-xl-9 col-lg-3 col-md-4 col-sm-5 col-4 d-none d-sm-block d-lg-none">
+				    	<img src="img/ebreimer1.jpg" class="img-fluid img-thumbnail" alt="Eric Breimer">
+						</div>
+				  </div> <!-- row -->					  
+		    </div> <!-- /col -->		
+		    <div class="col-xl-8 col-lg-8 col-md-12">
+		      <div class="card">
+					  <div class="card-header">
+					    Brief Biography
+					  </div>
+		      	<div class="card-body">
+						  <div class="row">
+								<div class="col-xl-3 col-lg-4 d-none d-lg-block bio-image">
+									<img src="img/ebreimer1.jpg" class="img-fluid rounded" alt="Eric Breimer">
+								</div>
+								<div class="col-xl-9 col-lg-8 col-md-12">
+						    	<p class="card-text biography">
+						    		Since joining Siena in 2002, I have focused on
+						    		improving Computer Science & Information Systems education 
+										through the use of web technology.
+										I am Vice President of <a href="http://www.edsig.org/">EDSIG</a> for 2019.
+										I currently do research in <i>Applied Machine Learning</i> and previously in
+										algorithm design for intractable problems.  
+										Most recently, I have taught 
+										<i>Intro to Exploratory Data Analysis & Visualization</i>, 
+										<i>Web Application Development</i> and
+										<i>Management Information Systems</i>
+										I have also taught
+										<i>Introduction to Programming in Java</i>,
+										<i>Machine Learning</i>, 
+										<i>Analysis of Algorithms</i>, 
+										<i>Data Structures</i>
+										<i>Theory of Computation</i> and 
+										<i>Web Design</i>. 
+										
+							    </p>
+								</div>
+						  </div>
+		      	</div>
+					</div> <!-- /card -->
+		    </div> <!-- /col -->
+		  </div> <!-- /row -->
+		  
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+		  <!-- - - - - - - - - - - Schedule - - - - - - - - - - -->
+			<h2 id="schedule" class="main-section"><span class="oi oi-calendar"></span> Schedule</h2>
+			
+			<p class="alert alert-warning">I am always free to meet during office hours, but you can also
+			schedule an appointment from 7:30am - 2:30pm when I am not in class. 
+			I must often attend meetings during free period and the hour before,
+			but I may be free during these times, so please ask.
+			I am rarely free after 2:30pm.
+			</p>			
+			<div class="row my-schedule">
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
+				<!-- Time -->
+				<div class="col-sm-2">
+					<div class="time" style="height: 1rem"></div>
+					<div class="hour" style="height: 3rem">7:00am</div>
+					<div class="half" style="height: 3rem">7:30am</div>
+					<div class="hour" style="height: 3rem">8:00am</div>
+					<div class="half" style="height: 3rem">8:30am</div>
+					<div class="hour" style="height: 3rem">9:00am</div>
+					<div class="half" style="height: 3rem">9:30am</div>
+					<div class="hour" style="height: 3rem">10:00am</div>
+					<div class="half" style="height: 3rem">10:30am</div>
+					<div class="hour" style="height: 3rem">11:00am</div>
+					<div class="half" style="height: 3rem">11:30am</div>
+					<div class="hour" style="height: 3rem">12:00pm</div>
+					<div class="half" style="height: 3rem">12:30pm</div>
+					<div class="hour" style="height: 3rem">1:00pm</div>
+					<div class="half" style="height: 3rem">1:30pm</div>
+					<div class="hour" style="height: 3rem">2:00pm</div>
+					<div class="half" style="height: 3rem">2:30pm</div>
+				</div>
+					
+				<!-- Monday -->
+				<div class="col-sm-2">
+					<div class="day">Mon.</div>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div class="free" style="height: 6rem"></div>
+										
+					<div class="item course-1">
+					 	<a href="courses/scdv-110-f18/"><b>CSIS-390</b></a><br>
+					 	<i>Lecture-01</i><br>
+					 	<u>8:00-9:00am</u><br>
+					 	RB328
+					</div>
+					
+					<div class="free" style="height: 3rem"></div>
+						
+					<div class="item office" style="height: 9rem">
+					 	<b>Office Hours</b><br>
+					 	<u>9:30-11:00am</u><br>
+					 	RB320
+					</div>
+					
+					<div class="free" style="height: 9rem"></div>
+					
+					<div class="item free-period" style="height: 6rem">
+					 	Free Period<br>
+					  12:30-1:30pm
+					</div>																		
+				</div> <!-- /col  -->
+				
+				<!-- Tuesday -->
+				<div class="col-sm-2">
+					<div class="day">Tues.</div>
+					
+					<div class="free" style="height: 7.5rem"></div>
+					
+					<div class="item course-2">
+					 	<a href="courses/scdv-110-f18/"><b>CSIS-390</b></a><br>
+					 	<i>Lab-02T</i><br>
+					 	<u>8:15-10:15am</u><br>
+					 	RB330
+					</div>
+					
+					<div class="free" style="height: 1.5rem"></div>
+						
+					<div class="item office" style="height: 6rem">
+					 	<b>Office Hours</b><br>
+					 	<u>10:30-11:30am</u><br>
+					 	RB320
+					</div>
+				</div> <!-- /col -->
+				
+				<!-- Wednesday -->
+				<div class="col-sm-2">
+					<div class="day">Wed.</div>
+						
+					<div class="free" style="height: 7rem"></div>
+					
+					<div class="item course-3">
+					 	<a href="courses/scdv-110-f18/"><b>CSIS-390</b></a><br>
+					 	<i>Lab-01W</i><br>
+					 	<u>8:10-10:10am</u><br>
+					 	RB330
+					</div>
+					
+					<div class="free" style="height: 2rem"></div>
+						
+					<div class="item office" style="height: 6rem">
+					 	<b>Office Hours</b><br>
+					 	<u>10:30-11:30am</u><br>
+					 	RB320
+					</div>
+					
+					<div class="free" style="height: 6rem"></div>
+					
+					<div class="item free-period" style="height: 6rem">
+					 	Free Period<br>
+					  12:30-1:30pm
+					</div>																		
+				</div> <!-- /col -->
+				
+				<!-- Thursday -->
+				<div class="col-sm-2">
+					<div class="day">Thus.</div>
+				</div> <!-- /col -->
+				
+				<!-- Friday -->
+				<div class="col-sm-2">
+					<div class="day">Fri.</div>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div class="free" style="height: 6rem"></div>
+	
+					<div class="item course-1">
+					 	<a href="courses/scdv-110-f18/"><b>CSIS-390</b></a><br>
+					 	<i>Lecture-01</i><br>
+					 	<u>8:00-9:00am</u><br>
+					 	RB328
+					</div>
+					
+					<div class="free" style="height: 3rem"></div>
+						
+					<div class="item office" style="height: 9rem">
+					 	<b>Office Hours</b><br>
+					 	<u>9:30-11:00am</u><br>
+					 	RB320
+					</div>
+					
+					<div class="free" style="height: 9rem"></div>
+					
+					<div class="item free-period" style="height: 6rem">
+					 	Free Period<br>
+					  12:30-1:30pm
+					</div>																												
+				</div> <!-- /col -->
+			</div> <!-- /row -->
+		  
+					  
+		  <!-- - - - - - - - - - - Courses - - - - - - - - - - -->
+			<h2 id="courses" class="main-section"><span class="oi oi-briefcase"></span> Courses</h2>
+			
+			<p>List of all courses that I have taught as the lecture instructor. Click on the column header to sort and recolor.</p>
+		  
+			<table id="colorsort" class="table table-sm table-bordered tablesorter">
+				<thead>
+					<tr>
+						<th><span class="oi oi-elevator"></span> <b>Subject</b><abbr>Sub</abbr></th>
+						<th><span class="oi oi-elevator"></span> <b>Number</b><abbr>N</abbr></th>
+						<th><span class="oi oi-elevator"></span> <b>Name</b><abbr>Name</abbr></th>
+						<th><span class="oi oi-elevator"></span> <b>Semester</b><abbr>Sem</abbr></th>
+						<th><span class="oi oi-elevator"></span> <b>Year</b><abbr>Y</abbr></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td><a href="courses/csis-390-s19/"><b>Web Application Development</b></a></td>
+					<td>Spring</td>
+					<td>2019</td>
+					</tr>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+					<tr>
+					<td>SCDV</td>
+					<td>110</td>
+					<td><a href="courses/scdv-110-f18/"><b>Intro to Exploratory Data Analysis & Visualization</b></a></td>
+					<td>Spring</td>
+					<td>2018</td>
+					</tr>
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td><a href="courses/csis-390-s18/"><b>Web Application Development</b></a></td>
+					<td>Spring</td>
+					<td>2018</td>
+					</tr>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td><a href="courses/csis-114-f17/"><b>Management Information Systems</b></a></td>
+					<td>Fall</td>
+					<td>2017</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td><a href="courses/csis-390-s17/"><b>Web Application Development</b></a></td>
+					<td>Spring</td>
+					<td>2017</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Introduction to Programming</td>
+					<td>Spring</td>
+					<td>2016</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>400</td>
+					<td>Machine Learning</td>
+					<td>Spring</td>
+					<td>2016</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2015</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Introduction to Programming</td>
+					<td>Fall</td>
+					<td>2015</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Introduction to Programming</td>
+					<td>Spring</td>
+					<td>2015</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2014</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>180</td>
+					<td>Web Design</td>
+					<td>Fall</td>
+					<td>2014</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>210</td>
+					<td>Data Structures</td>
+					<td>Fall</td>
+					<td>2014</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Spring</td>
+					<td>2014</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>180</td>
+					<td>Web Design</td>
+					<td>Spring</td>
+					<td>2014</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2013</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>180</td>
+					<td>Web Design</td>
+					<td>Fall</td>
+					<td>2013</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>351</td>
+					<td>Theory of Computation</td>
+					<td>Spring</td>
+					<td>2013</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2012</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Fall</td>
+					<td>2012</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2012</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Introduction to Programming</td>
+					<td>Fall</td>
+					<td>2011</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2011</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2011</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>351</td>
+					<td>Theory of Computation</td>
+					<td>Spring</td>
+					<td>2011</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Introduction to Programming</td>
+					<td>Fall</td>
+					<td>2010</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>390</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2010</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2010</td>
+					</tr>
+					
+					<tr>
+					<td>MUMD</td>
+					<td>490</td>
+					<td>Multimedia Team Project</td>
+					<td>Spring</td>
+					<td>2010</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>401</td>
+					<td>Web Application Development</td>
+					<td>Fall</td>
+					<td>2009</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Fall</td>
+					<td>2009</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>401</td>
+					<td>Web Design</td>
+					<td>Spring</td>
+					<td>2009</td>
+					</tr>
+					
+					<tr>
+					<td>MUMD</td>
+					<td>290</td>
+					<td>Multimedia Development</td>
+					<td>Spring</td>
+					<td>2009</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2008</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Spring</td>
+					<td>2008</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>401</td>
+					<td>Web Design</td>
+					<td>Fall</td>
+					<td>2007</td>
+					</tr>
+					
+					<tr>
+					<td>MUMD</td>
+					<td>290</td>
+					<td>Multimedia Development</td>
+					<td>Fall</td>
+					<td>2007</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2007</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>385</td>
+					<td>Analysis of Algorithms</td>
+					<td>Spring</td>
+					<td>2007</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Spring</td>
+					<td>2007</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>401</td>
+					<td>Web Design</td>
+					<td>Fall</td>
+					<td>2006</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2006</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>385</td>
+					<td>Analysis of Algorithms</td>
+					<td>Spring</td>
+					<td>2006</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Fall</td>
+					<td>2005</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Fall</td>
+					<td>2005</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>114</td>
+					<td>Management Information Systems</td>
+					<td>Spring</td>
+					<td>2005</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>385</td>
+					<td>Analysis of Algorithms</td>
+					<td>Spring</td>
+					<td>2005</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Fall</td>
+					<td>2004</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>201</td>
+					<td>Web Design</td>
+					<td>Fall</td>
+					<td>2004</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>210</td>
+					<td>Data Structures</td>
+					<td>Spring</td>
+					<td>2004</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>385</td>
+					<td>Analysis of Algorithms</td>
+					<td>Spring</td>
+					<td>2004</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Fall</td>
+					<td>2003</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>400</td>
+					<td>Bioinformatics</td>
+					<td>Fall</td>
+					<td>2003</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>210</td>
+					<td>Data Structures</td>
+					<td>Spring</td>
+					<td>2003</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>120</td>
+					<td>Procedural Design &amp; Programming</td>
+					<td>Spring</td>
+					<td>2003</td>
+					</tr>
+					
+					<tr>
+					<td>CSIS</td>
+					<td>116</td>
+					<td>Survey of Information Technology</td>
+					<td>Fall</td>
+					<td>2002</td>
+					</tr>
+				</tbody>
+			</table>		  
+		  			
+			<!-- - - - - - - - - - - Vita Section - - - - - - - - - - -->
+			<h2 id="vita" class="main-section"><span class="oi oi-task"></span> Curriculum Vitae</h2>
+			<a class="btn btn-primary vita-button" href="docs/vita2018.pdf">
+				<span class="oi oi-document"></span> &nbsp;  Full Vita<br>
+				<span class="vita-updated">Updated 1/2018</span>
+			</a>
+			<h3 class="vita-name">Dr. Eric A. Breimer</h3>
+			<h4 class="vita-title">
+				Associate Professor<br>
+				Computer Science Department<br>
+				Siena College
+			</h4>				
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="card">
+		      <h5 class="card-header vita-section" role="tab" id="heading1">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+		          Professional Employment
+		        </a>
+		      </h5>
+			    <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+			      <div class="card-block">
+							<table class="table table-sm">
+							  <tr>
+							    <th>Year</th>
+							    <th>Institution</th>
+							    <th>Rank</th>
+							    <th>Subject Field</th>
+							  </tr>
+							  <tr>
+							    <td>2017 - present</td>
+							    <td>Siena College</td>
+							    <td>Department Chair</td>
+							    <td>Computer Science</td>
+							  </tr>
+							  <tr>
+							    <td>2008 - present</td>
+							    <td>Siena College</td>
+							    <td>Associate Professor</td>
+							    <td>Computer Science</td>
+							  </tr>
+							  <tr>
+							    <td>2002 - 2008</td>
+							    <td>Siena College</td>
+							    <td>Assistant Professor</td>
+							    <td>Computer Science</td>
+							  </tr>
+							  <tr>
+							    <td>1999 - 2002</td>
+							    <td>Rensselaer Polytechnic Institute</td>
+							    <td>Instructor</td>
+							    <td>Computer Science</td>
+							  </tr>
+							</table>
+			      </div> <!-- /card-block -->
+			    </div> <!-- /collapse -->
+			  </div> <!-- /card -->
+			  <div class="card">
+			    <h5 class="card-header vita-section"  role="tab" id="heading2">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+		          Degrees/Certification Earned
+		        </a>
+			    </h5>
+			    <div id="collapse2" class="collapse show" role="tabpanel" aria-labelledby="heading2">
+			      <div class="card-block">
+							<table class="table table-sm">
+							  <tr>
+							    <th>Year</th>
+							    <th>Degree/Certification</th>
+							    <th>Institution</th>
+							  </tr>
+							  <tr>
+							    <td>2002</td>
+							    <td>Ph.D., Computer Science</td>
+							    <td>Rensselaer Polytechnic Institute</td>
+							  </tr>
+							  <tr>
+							    <td>2000</td>
+							    <td>M.S., Computer Science</td>
+							    <td>Rensselaer Polytechnic Institute</td>
+							  </tr>
+							  <tr>
+							    <td>1997</td>
+							    <td>B.S., Computer Science</td>
+							    <td>Binghamton University</td>
+							  </tr>
+							  <tr>
+							    <td>1995</td>
+							    <td>A.S., Computer Science</td>
+							    <td>Dutchess Community College</td>
+							  </tr>
+							</table>
+			      </div> <!-- /card-block -->
+			    </div> <!-- /collapse -->
+			  </div> <!-- /card -->
+			  <div class="card">
+			    <h5 class="card-header vita-section"  role="tab" id="heading3">
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+		          Membership in Scholarly/Professional Organizations
+		        </a>
+			    </h5>
+			    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+			      <div class="card-block">
+							<ul>
+								<li>Vice President (2019), Education Special Interest Group (EDSIG),
+								Association of Information Technology Professionals (AITP), Member Since 2008</li>
+								<li>President (2017-2018), Information Systems & Computing Academic Professionals, Inc. (ISCAP)</li>
+								<li>Board of Directors (2016), Information Systems & Computing Academic Professionals, Inc. (ISCAP)</li>
+								<li>Board of Directors (2012-2015), Education Special Interest Group (EDSIG),
+								Association of Information Technology Professionals (AITP), Member Since 2008</li>
+								<li>Member, Upsilon Pi Epsilon, Since 2009</li>
+								<li>Member, Association for Computing Machinery, Since 1997</li>
+								<li>Member, Phi Theta Kappa, Since 1995</li>
+							</ul>
+						</div> <!-- /card-block -->
+			    </div> <!-- /collapse -->
+			  </div> <!-- /card -->
+			</div><!-- /accordian -->
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+			
+		  <!-- - - - - - - - - - - Research Section - - - - - - - - - - -->
+			<h2 id="research" class="main-section"><span class="oi oi-wrench"></span> Research</h2>
+			
+			<p>Journal publications and peer-reviewed conference proceedings in chronological order:</p>
+			
+			<ul class="list-group pub-list">
+			
+				<li class="list-group-item">
+					<u>12/2018</u>
+					<p>
+						<b>Detecting Compromised Implicit Association Test Results using Supervised Learning</b>,
+						Brendon J. Boldt, Zack While, Eric Breimer,
+						<i>17th IEEE International Conference on Machine Learning and Applications (ICMLA)</i>, Orlando FL, 2018.
+					</p>
+				</li>
 
+				<li class="list-group-item">
+					<u>11/2018</u>
+					<p>
+						<b>Beyond #MeToo: Uprooting unconscious bias in STEM fields</b>,
+						Jennifer	Breese, Nicole	Scott, Philip	Kim, Eric	Breimer, Panel presentation at
+						<i>EDSIG Conference on Information Systems and Computing Education (EDSIGCON 2018)</i>, Norfolk VA
+					</p>
+				</li>
+
+				<li class="list-group-item">
+					<u>9/2016</u>
+					<p>
+						<b>Full Flip, Half Flip and No Flip: Evaluation of Flipping an Introductory Programming Course</b>,
+						Meg Fryling, Robert Yoder, Eric Breimer,
+						<i>Information Systems Education Journal</i>, Vol. 14, Num. 5, pp. 4-16, 2016.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>11/2015</u>
+					<p>
+						<b>Using a Flipped Course for 2-year College Outreach</b>,
+						Eric Breimer, Michelle Conway,
+						<i>Proceedings of EDSIG Conference on Information Systems and Computing Education (EDSIGCON 2015)</i>, Wilmington NC, v1, n3458.
+					</p>
+				</li>
+								
+				<li class="list-group-item">
+					<u>11/2013</u>
+					<p>
+						<b>On the Shoulders of Giants: Mobile Websites with Twitter Bootstrap</b>,
+						Eric Breimer, Workshop presented at
+						<i>Information Systems Education Conference (ISECON 2013)</i>, San Antonio TX.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>12/2012</u>
+					<p>
+						<b>Market Basket Analysis for Non-Programmers</b>,
+						Eric A. Breimer, Robert Yoder, Scott Vandenberg, 
+						<i>Information Systems Education Journal</i>, Vol. 10, Num. 6, pp. 38-50, 2012.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>11/2012</u>
+					<p>
+						<b>Exposing Students to Big Data: Hands-on Market Basket Analysis with Access</b>,
+						Eric Breimer, Robert Yoder, Scott Vandenberg, Workshop presented at
+						<i>Information Systems Education Conference (ISECON 2012)</i>, New Orleans LA.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>11/2012</u>
+					<p>
+						<b>Developing 21st Century Communicators</b>,
+						Jami Cotler, Robert Yoder, Eric Breimer, Deb DelBelso, 
+						<i>Proceedings of the Information Systems Educators Conference (ISECON 2012)</i>, New Orleans LA, ISSN: 2167-1435, v29 n1950.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>9/2011</u>
+					<p>
+						<b>Towards an Innovative Web-based Lab Delivery System for a Management Information Systems Course</b>,
+						Eric A. Breimer, Jami Cotler, Robert Yoder, 
+						<i>Information Systems Education Journal</i>, Vol. 9, Num. 4, pp. 27-36, 2011.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>6/2011</u>
+					<p>
+						<b>A Study of Video-based versus Text-based Labs for a Management Information Systems Course</b>,
+						Eric Breimer, Michelle Conway, Jami Cotler, Robert Yoder, 
+						<i>Proceeding of the 16th Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE 2011)</i>, June 27-29, 2011, Darmstadt, Germany, Proceedings  pp. 128-132.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>2/2010</u>
+					<p>
+						<b>Co-“Lab”oration: A New Paradigm for Building a Management Information Systems Course</b>,
+						Eric A. Breimer, Jami Cotler, Robert Yoder, 
+						<i>Information Systems Education Journal</i>, Vol. 8, Num. 2, 3-13, 2010.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>6/2009</u>
+					<p>
+						<b>Labs First: A Computer Scientist’s Guide to Teaching Management Information Systems</b>,
+						Eric A. Breimer, Jami Cotler, Robert Yoder,
+						<i>Journal of Computing Sciences in Colleges</i>, Vol. 24, Iss. 6, pp. 124-131, 2009.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>12/2005</u>
+					<p>
+						<b>Discovering Optimization Algorithms Through Automated Learning</b>,
+						Eric A. Breimer, Mark K. Goldberg, David Hollinger, Darren T. Lim, 
+						<i>DIMACS Series in Discrete Mathematics and Theoretical Computer Science</i>, Vol. 69, pp. 7-27, 2005.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>12/2003</u>
+					<p>
+						<b>Intrusion Detection: A Bioinformatics Approach</b>,
+						Scott Coull, Joel Branch, Boleslaw Szymanski, Eric Breimer, 
+						<i>Proceeding of the 19th Annual Computer Security Applications Conference</i>, December 8-12, 2003, Las Vegas, Proceedings, pp. 24-33.
+					</p>
+				</li> 
+				
+				<li class="list-group-item">
+					<u>8/2003</u>
+					<p>
+						<b>A Learning Algorithm for the Longest Common Subsequence Problem</b>,
+						Eric Breimer, Mark Goldberg, Darren Lim, 
+						<i>ACM Journal of Experimental Algorithm</i>s, Vol. 8, Article 4 (online), 2003.
+					</p>
+				</li>
+				
+				<li class="list-group-item">
+					<u>6/2002</u>
+					<p>
+						<b>A Supervised Learning Approach for Detecting Significant Local Alignments</b>,
+						Eric A. Breimer, Mark K. Goldberg, 
+						<i>Proceedings of the International Conference on Research in Computational Molecular Biology</i>, April 18-21, 2002, Washington DC, Currents in Computational Molecular Biology, pp. 26 - 27.
+					</p>
+				</li> 
+				
+				<li class="list-group-item">
+					<u>4/2002</u>
+					<p>
+						<b>Learning Significant Alignments: An Alternative to Normalized Local Alignment</b>,
+						Eric A. Breimer, Mark K. Goldberg,
+						<i>Proceedings of the 13th International Symposium on Methodologies for Intelligent Systems</i>, June 27-29, 2002, Lyon, France, Lecture Notes in Computer Science, Vol. 2366, pp. 37-45.
+					</p>
+				</li> 
+				  
+				<li class="list-group-item">
+					<u>12/2001</u>
+					<p>
+						<b>On the Height of a Random Set of Points in a d-dimensional Unit Cube</b>,
+						Eric A. Breimer, Mark K. Goldberg, Brian Kolstad, Malik Magdon-Ismail,
+						<i>Journal of Experimental Mathematics</i>, Vol. 10, No. 4, pp. 583-597, 2001.
+					</p>
+				</li> 
+				 
+				<li class="list-group-item">
+					<u>1/2001</u>
+					<p>
+						<b>Experimental Evaluation of the Height of a Random Set of Points in a d-dimensional Cube</b>,
+						Eric A. Breimer, Mark K. Goldberg, Brian Kolstad, Malik Magdon-Ismail, 
+						<i>Proceedings of the Workshop on Algorithm Engineering and Experiments</i>, January 5-7, 2001, Washington DC, pp. 161-171
+					</p>
+				</li> 
+				 
+				<li class="list-group-item">
+					<u>1/2000</u>
+					<p>
+						<b>A Learning Algorithm for the Longest Common Subsequence Problem</b>,
+						Eric A. Breimer, Mark K. Goldberg, Darren T. Lim, 
+						<i>Proceedings of the Workshop on Algorithm Engineering and Experiments</i>, January 7-8, 2000, San Francisco, pp. 147-156.
+					</p>
+				</li>
+				  
+				<li class="list-group-item">
+					<u>1/2000</u>
+					<p>
+						<b>A Task-based Architecture for Application-aware Adjuncts</b>,
+						Robert Farrell, Peter Fairweather, Eric Breimer, 
+						<i>International Conference on Intelligent User Interfaces</i>, January 9-12, 2000, New Orleans, pp. 82-85.
+					</p>
+				</li>
+		
+			</ul>
+			
+		</div><!-- /container -->					
+		
+		<!-- - - - - - - - - - - footer - - - - - - - - - - -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+			<div class="container">
+				<ul class="footer-links">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#vita">Vita</a></li>
+          <li><a href="#research">Research</a></li>
+				</ul>
+				<p>&copy; <span id="copy-year"></span> Eric Breimer<br>
+				Built with <a href="https://getbootstrap.com/">Bootstrap v4.2.1</a><br>
+				<small>Valid HTML5 + ARIA + SVG 1.1 + MathML 2.0</small></p>
+			</div>
+		</footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
-</body>
-
+    <!-- - - - - - - - - - - javascript - - - - - - - - - - -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.heatcolor.min.js"></script>
+    <script src="js/heatcolor.js"></script>
+    <script src="js/timeday.js"></script>
+    <script>
+			$(function() {
+				$("#colorsort").tablesorter();
+				$("th").click(sortwithcolor);
+				sortwithcolorint(5);
+				generatetimeday();	
+			});
+    </script>
+  </body>
 </html>
